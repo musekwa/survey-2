@@ -9,7 +9,15 @@ body {
     text-align: center;
 }
 
-#name, #email, #number, #dropdown {
+#title {
+    font-size: 2vw;
+}
+
+#description {
+    font-size: 1vw;
+}
+
+#name, #email, #number, #dropdown, #dropdown2 {
     width: 80%;
     height: 30px;
     border-radius: 10px;
@@ -21,21 +29,42 @@ form {
     background-color: cornsilk;
     width: 60%;
     height: auto;
-    margin: auto;   
+    margin: auto;
+    border-radius: 10px;
 }
 
-#part-1-form {
+#part-1-form{
     display: flex;
     flex-direction: column;
-    align-items: center;
+
 }
+#part-1-form input, #dropdown, #dropdown2 {
+   margin: auto;
+}
+
 #part-1-form label {
-   
-}
+    margin-left: 6vw;
+    margin-top: 8px;
+    margin-bottom: 8px;
+ }
+
+ select {
+     margin-bottom: 8px;
+     margin-top: 8px;
+ }
 
 #part-2-form {
-    display: flex;
-    flex-direction: column;
+    margin-left: 6vw;
+
+}
+
+#dropdown, #dropdown2  {
+    margin-top: 8px;
+}
+
+.options legend{
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 .options #comment{
     margin-left: 5.5vw;
@@ -43,7 +72,30 @@ form {
     margin-bottom: 10px;
 }
 
+#comment {
+    width: 88%;
+    height: 50px;
+    border-radius: 10px;
+}
 
-#part-3-form {
+#my-submit {
+    text-align: center;
+    
+}
+button {
+    padding: 3px 5px 3px 5px;
+}
 
+@media screen and (max-width: 800px) {
+    form {
+        width: 100%;
+        height: auto;
+    }
+
+    #title {
+        font-size: 13px;
+    }
+    #description {
+        font-size: 10px;
+    }
 }
