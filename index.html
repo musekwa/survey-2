@@ -7,9 +7,54 @@
   </head>
 
   <body>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-    <script  src="js/index.js"></script>
+      <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+      <script  src="js/index.js"></script>
 
-    Hello World, we are software developers!
-  </body>
+      <h1 id="title">freeCodeCamp Survey Form</h1>
+      <p id="description">Thank you for taking the time to help us improve the platform</p>
+      <form action="#" id="survey-form">
+        <div id="part-1-form">
+          <label id="name-label" for="name">Name: </label>
+          <input type="text" name="name" id="name" required placeholder="your name"><br>
+          <label id="email-label" for="emal">Email: </label>
+          <input type="email" name="email" id="email" required placeholder="your email"><br>
+          <label id="number-label" for="number">Age: </label> 
+          <input type="number" name="number" id="number" required max="120" min="12" placeholder="your age lt 12 and age gt 120">
+          <br>
+          <label for="dropdown">What is your favorite feature of freeCodeCamp?</label>
+          <select name="foods" id="dropdown">
+            <option value="default">Select current role</option>
+            <option value="student">Student</option>
+            <option value="full-time-job">Full Time Job</option>
+            <option value="full-time-learner">Full Time Learner</option>
+          </select>
+        </div>
+        <br>
+        <div id="part-2-form">
+          <div class="options">
+            <legend>Would you recommend freeCodeCamp to a friend?</legend>
+            <input type="radio" name="recommendation" id="definitely" value="definitely">
+            <label for="definitely">Definitely</label><br>
+            <input type="radio" name="recommendation" id="maybe" value="maybe"> 
+            <label for="maybe">Maybe</label><br>
+            <input type="radio" name="recommendation" id="not-sure" value="not-sure">
+            <label for="not-sure">Not Sure</label><br>
+        </div>
+        <div class="options">
+          <legend>What would you like to see improved?</legend>
+          <input type="checkbox" value="front-end-projects" id="front-end-projects">
+          <label for="front-end-projects">Front End Projects</label><br>
+          <input type="checkbox" value="back-end-projects" id="back-end-projects">
+          <label for="back-end-projects">Back End Projects</label><br>
+          <input type="checkbox" value="challenges" id="challenges">
+          <label for="challenges">Challenges</label><br>
+        </div>
+        <div id="part-3-form">
+          <label for="comment">Any Comment or Suggestion?</label>
+          <textarea name="comment" id="comment" cols="80" rows="5" placeholder="your comment here"></textarea>
+        </div>
+          <button id="submit" type="submit">Submit</button>
+        </div>
+      </form>
+    </body>
 </html>
