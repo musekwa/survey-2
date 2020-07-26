@@ -1,5 +1,6 @@
-# FCC Test Suite Template
+# Surve Form
 
-**Fork** this project (do not open a Pull Request) to start working on any of freeCodeCamp's responsive web design course projects. Select the project from the dropdown menu and run the tests to see which requirements your project is still missing.
-
-You don't know how to fork a project? [Click hear](https://help.github.com/articles/fork-a-repo/) to learn how to do it.
+This single page project illustrates one of the tamplates of a real survey form webpage.<br>
+Care was taken to make sure the page is responsive and mobile friendly.<br>
+Besides the grid and flexbox concepts, there were also used media queries and much more features make it completely responsive. <br>
+Completing this project was one of the requirements for the <strong>freeCodeCamp Responsive Web Design Certification.</strong>
